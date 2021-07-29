@@ -41,7 +41,7 @@ include_directories(
 
 add_definitions(-DDeviceFamily_MSP432E4 -D__MSP432E401Y__)
 
-file(GLOB_RECURSE SOURCES "startup/*.*" "Core/*.*")
+file(GLOB_RECURSE SOURCES "StartUp/*.*" "Core/*.*")
 
 link_libraries(${CMAKE_SOURCE_DIR}/Drivers/ti/devices/msp432e4/driverlib/lib/gcc/m4f/msp432e4_driverlib.a)
 
